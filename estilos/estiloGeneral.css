@@ -1,0 +1,651 @@
+
+/* EN PRIMER LUGAR, YA QUE NUESTRO CÓDIGO ESTÁ BASADO EN HTML5, ENGLOBAMOS TODAS LAS ETIQUETAS TÍPICAS COMO BLOQUES */
+/**        ESTILOS GENERALES DE LA PÁGINA      **/
+
+header, section, footer, aside, nav, article, figure, figcaption, hgroup{
+display: block;
+}
+
+/* Importacion letra Google 
+
+font-family: 'Slabo 27px', serif;
+
+font-family: 'Muli', sans-serif;
+
+font-family: 'Inconsolata', monospace;
+
+font-family: 'Nanum Gothic', sans-serif;
+
+font-family: 'Dosis', sans-serif;
+
+font-family: 'Quicksand', sans-serif;
+*/
+
+
+
+
+*{
+	margin:0;
+	padding:0;
+font-family: 'Nanum Gothic', sans-serif;
+	color:#592d0d;
+	text-align:center;
+}
+
+img#mugikorra, img#mugikor,footer ul li#fbmovil{
+  display:none;
+  }
+
+#oporrak{
+  position: absolute;
+  bottom: 0;
+}
+
+#boton-cerrar{
+    position: absolute;
+    top:0.1em;
+    right:0.2em;
+    font-size:1em;
+    display: block;
+    padding: 0;
+    margin: 0;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    vertical-align: top;
+
+}
+
+#boton-cerrar:hover{
+		 background-color:white;
+		 border:1px solid;
+		 padding-bottom:0.3em;
+	}
+
+img#calen{
+  width:50px;
+  height:50px;
+  vertical-align:middle;
+  padding-top:1em;
+  -webkit-transform: rotate(-15deg); 	
+  -moz-transform: rotate(-15deg); 	rotation: -15deg;
+  position:absolute;
+  left:35%;
+}
+
+div#sms{
+  top:4.2em;
+  opacity:0;
+  font-size:1.2em;
+  background-color:#fff0e6;
+  width:100%;
+  transition:all 3s ease;
+  padding:0.5em 0;
+  display:block;
+  margin:auto;
+  text-align:center;
+}
+
+#red{
+  padding:0.5em 0;
+  position:relative;
+  background-color:black;  
+}
+
+#red input{
+  display:inline;
+}
+ 
+  
+ #watch { 
+  background-color:black;
+display: block;
+  padding: 0;
+  margin :0;
+   position: relative;
+    width:auto; 
+    height:350px; 
+    list-style: none; 
+    border: 5px solid #1a1a1a; 
+     box-shadow: 0 0 5px #000; overflow: hidden; 
+     } 
+     
+      
+#watch li {
+      width:auto;
+      position: absolute;
+       top: 0; 
+       left: 0; 
+       margin:0;
+       overflow:hidden; 
+       display:block
+        } 
+        
+         
+#watch li img {
+     width:75%;
+     height:100%;  
+     display:block;
+     margin:auto;    
+} 
+  
+#watch .selected {
+height: 100%; 
+z-index: 1; 
+-moz-transition: all 1s ease 0s; -webkit-transition: all 1s ease 0s; 
+-o-transition: all 1s ease 0s; 
+-ms-transition: all 1s ease 0s; transition: all 1s ease 0s; 
+}
+ 
+
+     
+#watch .noselected { 
+height: 0;
+ z-index: auto;
+ -moz-transition: all 0s ease 1s; -webkit-transition: all 0s ease 1s; 
+-o-transition: all 0s ease 1s;
+ -ms-transition: all 0s ease 1s; transition: all 0s ease 1s; 
+} 
+
+
+nav#menu_moviles,a img#mugikor, #izena1 h5#carta,nav#carta_menu,#scroll-container,#m_scroll{
+	display:none;
+}
+
+body{
+	margin:0 2.5em;
+}
+
+p{
+	font-weight:bold;
+}
+
+h5{
+	padding:1em;
+	font-family:"Handlee",cursive!important;
+	color:#e60000 !important;
+}
+
+.titulares{
+	padding:0.4em;
+	background-color:#d9d9d9;
+ margin:0.5em 0;
+}
+
+input.titulares{
+  font-size:1.1em;
+  margin:1em;
+  cursor:pointer;
+}
+
+
+div#principal{
+	margin:0;
+	background:linear-gradient(to top,#e7b1b1 45%,#ffd280 5%);
+	width:100%;
+	padding-top:1em;
+	text-align:center;
+}
+
+div#principal h3{
+  margin:0;
+  text-decoration:none;
+  text-align:center;
+  padding:0.8em 0; 
+  font-size:1.4em;
+  text-shadow:0px 0px 25px #996300;
+  letter-spacing: 2px;
+}
+
+
+table{
+	font-family:Georgia,"Courier New","Handlee",cursive;
+	padding:0;
+	display:block;
+	margin:auto;
+	width:75%;
+	border-spacing:4px 4px;
+	margin-bottom:3em;
+font-size:1.2em;
+}
+
+th{
+	font-size:1.1em;
+	width:100%;
+	padding:1em 0;
+	background-color: #ffb380;
+	text-shadow:1px 2px 1px #fff0e6;
+
+}
+
+h1#karta{
+background-color: #ffb380;
+font-size:1.5em;
+margin-top:0.5em;
+}
+
+img#ubilogo{
+   width:40px;
+   height:40px;
+   border-radius:8em;
+   vertical-align:middle;
+   margin:1em 0.3em 1em 0;
+}
+
+td{
+	background-color:#fff0e6;
+	line-height:1.9em;
+	width:100%;
+	padding:0.8em;
+	font-family:"Handlee",cursive !important;
+}
+
+td.precio, span.precio{
+	font-weight:bold;
+	font-size:1.1em;
+	color:#e60000 !important;
+}
+
+
+span.id{
+	font-size:1.3em;
+	padding:0.4em;
+	border-radius:2em;
+	font-weight:bold;
+	color:#e60000 !important;
+}
+
+
+.red_social ul{
+	margin-left:0.4em;
+	list-style:none;
+	float:left;
+	position:fixed;
+	top:5px;
+	left:0;
+
+}
+
+
+/**  FIN de ESTILO GENERAL **/
+
+
+p#ini_galeria{
+	display:none;
+	padding:0.3em;
+	background-color:#d9d9d9;
+	position:fixed;
+	border-radius:20px;
+}
+
+p#ini_galeria:hover{
+	text-decoration:underline;
+}
+
+
+
+			/**     TITULO DEL JATETXE  **//**  CABECERAS DE PÁGINAS WEB  **/
+
+
+ 
+
+
+    /****   HEADER = IZENA1  ****/
+header#izena1{
+	text-align:center;
+	width:100%;
+	font-size:1.2em;
+	background-color:#000000;
+	padding:1em 0 0.5em ;
+}
+#izena1 *{
+	font-family:"Handlee",cursive!important;
+	color:#e60000 !important;
+}
+
+#izena1 img{
+	border-radius:3em;
+	width:75px;
+	height:75px;
+	margin:0 0.7em;
+}
+
+h1.titulo_carta{
+	margin-top:-0.4em;
+	font-size:2em;
+}
+
+.txiki{
+		font-style:italic;
+}
+
+
+#izena1 h1:first-letter{
+	font-size:1.5em;
+}
+
+span#en{
+	padding:0 0.4em 0 0.2em;
+	border-radius:35px;
+	background-color:blue;
+	color:white !important;
+}
+	
+
+.logo1{
+	padding-top:0.5em;
+	float:left;
+}
+.logo2{
+	padding-top:0.5em;
+	float:right;
+}
+
+.boton{
+	font-weight:bold;
+	padding:0.3em;
+	position:relative;
+	border:0.2px solid;
+	text-align:center;
+	border-radius:0.5em;
+	height:2.5em;
+	width:5.8em;
+	cursor:pointer;
+	margin:1em;
+}
+
+.boton:hover{
+	background-color:#ffb380;
+}
+/**       FIN CABECERA     **/
+
+
+#imagen{
+	width:auto;
+}
+
+div#principal{
+	width:100%;	
+}
+
+img.imagenCentro{
+	margin:1em 0 0;
+	width:auto;
+}
+
+img.imgpeque{
+	margin:1em 0;
+	width:auto;
+}
+
+img#palante{
+	 right:0.7em;
+	 position:fixed;
+	 top:20em;
+	 opacity:0.4;
+}
+
+img#patras{
+	left:0.7em;
+	 position:fixed;
+	 top:20em;
+	 opacity:0.4;
+	
+}
+
+img#patras:hover,img#palante:hover, img#parriba:hover{
+	opacity:0.8;
+}
+	
+
+			/**   FIN de CABECERAS   **//**  FIN de TITULO del JATETXE  **/
+
+
+/*MENÚ NAVEGABLE*/
+
+
+nav#menu{
+ width:100%;
+	padding:0.5em 0;
+	text-align:center;
+}
+
+nav#menu ul,ul#hizk {
+	text-align:center;
+	margin:auto;
+	display: flex;
+	margin-bottom:1em;
+	overflow: hidden;
+	text-decoration:none;
+justify-content:center;
+}
+
+nav#menu ul li,li.idioma{
+	opacity:0.5;
+	border:1.2px solid;
+	padding:0.5em;
+	border-radius:6%;
+	float:left;
+	list-style:none;
+	margin:auto 0.5em;
+	background-color:#ffb380;
+}
+
+nav#menu a{
+	text-decoration:none;
+	color:#e60000;
+}
+
+nav#menu ul li:hover{
+	opacity:1;
+	background-color:#fff0e6;
+	border:1.2px solid;
+
+}
+
+nav#menu li.actual{
+	opacity:1;
+	background-color:#fff0e6;
+	border:1.1px dotted;
+	font-weight:bold;
+
+	}
+
+
+
+
+/**    CONTENIDO PRINCIPAL  **/
+
+div#galeria text{
+			display:block;
+			position: relative;
+			bottom:25px;
+			color:#fff;
+			opacity:0.5;
+			font-weight:bold;
+}
+
+
+
+footer img#igo{
+	font-size:0.7em;
+    position: fixed;
+    border-radius: 2px;
+    height: 37px;
+    width: 37px;
+     -webkit-transition-duration: 3s, 3s;
+	transition-duration: 3s, 3s;
+	outline: 0;
+	bottom:0px;
+	right:0px;
+	display:none;
+	cursor:pointer;
+}
+
+
+/*****     PIE DE PÁGINA   *****/
+
+footer{
+		background-color:black;
+
+	}
+	footer ul{
+		color:#e60000 !important;
+		padding:1em;
+		list-style-type: none;
+		text-align: center;
+	}
+	
+	footer ul li{
+		font-family:"Handlee",cursive !important;
+		margin:0 0.4em;
+		color:#e60000 !important;
+		display: inline;
+	}
+footer a.link_pie{
+	color:#663300;
+}
+
+footer span.zuri{
+	color:white !important;
+}
+
+#tab1, #tab2, #tab3{
+font-size:0.7em;
+width:30%;
+margin:2em 0.5em;
+transition:all 1s ease;
+}
+
+div#horario{
+	border-radius:0.5em;
+	background-color:white;
+	width:40%;
+	margin:auto;
+	margin-top:4em;
+}
+
+h2#donde{
+	margin-top:1em;
+	text-align:left;
+	padding-bottom:1em;
+	background-color:#ffe0cc;
+
+}
+
+img#ubica{
+	margin:auto;
+	display:block;
+	padding:0;
+ width:100%;
+}
+
+
+
+
+table#opinionformu{
+	width:40%;
+	background-color:none;
+	margin:2em 0 2em 4em;
+}
+
+ img#cuadro{
+	 margin-top:2em;
+	float:right;
+	padding-right:4em;
+	width:450px; 
+	height:355px;
+}
+
+ table#opinionformu th,tr,td,input,textarea{
+	 background-color:none;
+ }
+ 
+ table#opitable{
+	 margin:0 0 1em 0;
+	 padding:0;
+	 display:inline;
+  background-color:#ff8c00;
+ }
+ 
+ 
+ 
+  table#opitable tr td{
+	  padding:0 auto;
+	  margin:0 0 1em 0;
+	  width:30em;
+  }
+  
+ 
+
+th#opi1{
+	margin:0;
+	text-align:left;
+	padding:0.4em;
+ border-top:1px solid;
+  background-color:#e7b1b1;
+    color:white;
+}
+
+img#person{
+	padding-right:0.5em;
+	width:20px;
+	height:20px;
+	border-radius:30em;
+	vertical-align:middle;
+}
+
+
+table#opinionformu input[type="radio"] { 
+display: none; 
+} 
+
+label { 
+color: grey;
+margin:0 0.3em;
+ } 
+
+.clasificacion { 
+direction: rtl; 
+unicode-bidi: bidi-override; 
+}
+
+ label:hover, label:hover ~ label { 
+color: orange;
+ } 
+
+table#opinionformu input[type="radio"]:checked ~ label { 
+color: orange;
+ }
+
+input,textarea{
+	font-weight:bold;
+}
+
+input:focus,textarea:focus{
+	background-color:#ffb380;
+}
+
+a input.titulares:hover{
+  background-color:#ffb380;
+}
+
+
+	/* CELIACOS y IVA */
+	#bez{
+ display:block;
+ width:25%;
+	margin:auto;
+ border:1px solid;	
+ background-color:#ffe0cc;
+}  
+
+#celiaco{
+ margin:1em 0;
+padding:0.6em;
+background-color:#ffe0cc;
+}
+/*  FIN CELIACOS e IVA  */
+
+
+
