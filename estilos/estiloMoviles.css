@@ -1,0 +1,876 @@
+
+@media screen and (min-width: 280px) and (max-width:1200px){
+
+/* Primero, a modo general, predeterminamos el margen, padding y fuente de la letra
+ para todos los elementos */
+
+
+/* Importacion letra Google 
+
+font-family: 'Cabin', sans-serif;
+
+font-family: 'Dosis', sans-serif;
+
+font-family: 'EB Garamond', serif;
+
+font-family: 'Exo', sans-serif;
+
+font-family: 'Modern Antiqua', cursive;
+
+font-family: 'Muli', sans-serif;
+
+font-family: 'Nanum Gothic', sans-serif;
+
+font-family: 'Quicksand', sans-serif;
+
+*/
+
+
+*{
+	margin:0px;
+	font-weight:bold;
+	color:#592d0d;
+	text-align:center;
+	padding:0px;
+font-family: 'Handlee', sans-serif;
+}
+
+body{
+	margin:0;
+	background:linear-gradient(0deg,orange 10%,#ffc7b3 90%);
+}
+
+table{
+	display:block;
+	width:100%;
+	border-spacing:4px 4px;
+	margin-bottom:2em;
+  font-size:1.2em;
+}
+
+/**** SIDEBAR MENU MOVILES ****/
+.sidebar{
+    position: fixed;
+    height: 100%;
+    width:0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.4s;
+    box-sizing:border-box;
+}
+
+.sidebar .boton-cerrar{
+  font-family:Arial;
+  text-decoration:none;
+  font-size:2.5em;
+  border-left:1px solid;
+  display:block;
+  position:absolute;
+  right:0;
+  padding:0 0.4em;
+}
+
+
+ nav#menu_moviles .sidebar ul a{ 
+text-decoration:none;
+font-size:1.4em; 
+display:block;
+width:11em;
+
+} 
+
+nav#menu_moviles .sidebar ul a li:hover{
+ margin-left:1.5em; 
+} 
+
+nav#menu_moviles .sidebar ul{ 
+background:url('../img/tulipan.jpg')top; 
+height:110%; 
+width:auto;
+padding-bottom:2em;
+}
+
+ nav#menu_moviles .sidebar ul a li{
+ list-style:none;
+ background-color:white;
+ margin:0.2em 0 0 0.2em;
+ padding:0.2em 0;
+ border:1px solid black;
+ backdrop-filter:blur(1px);
+ }
+
+
+#tit{
+  transform-style: preserve-3d;         transition: all 1s linear;
+  perspective:100px;
+  }
+
+#tit:hover{
+ transform:rotate(365deg)III;
+}
+
+.plus{
+  background:url('../img/mas.svg');
+  background-size:cover;
+  float:right;
+  width:35px;
+  height:35px;
+}
+
+
+
+#red{
+  padding:0.5em 0;
+  position:relative;
+  background-color:black;  
+}
+
+
+#red input{
+  display:inline;
+}
+
+#principal #m_scroll{
+  display:inline;
+}
+
+div#sms{
+  top:4.2em;
+  opacity:0;
+  font-size:1.2em;
+  background-color:#fff0e6;
+  width:100%;
+  transition:all 3s ease;
+  padding:0.5em 0;
+  position:fixed;
+  text-align:center;
+}
+
+
+/***  MENU SCROLL HORIZONTAL ***/
+#scroll-contenedor{
+ width: auto; 
+ height: 60px;
+  overflow-x: scroll; 
+  overflow-y:scroll;
+  padding: 8px;
+  background: linear-gradient(90deg, orange 10%,IndianRed 90%);
+  margin-top:-1.2em;
+  border-top:1px dotted white;
+  border-bottom:1px dotted white;
+   white-space: nowrap; 
+}
+
+#scroll-contenedor > a { 
+  border-radius:0.3em;
+  width: auto;
+  height: 40px;
+  margin:1.2em 0.5em 0;
+  padding: 0 1em; 
+  display: inline-block; 
+  text-align: center; 
+  color: black; 
+  line-height: 39px;   
+  background-color:#fff0e6;
+  text-decoration:none;
+  } 
+  
+  #scroll-contenedor > a.actual{
+   background-color: #ffb380;
+   }
+   
+   #scroll-contenedor > a:hover{
+   background-color: #ffb380;
+   }
+
+  #scroll-contenedor > h4:first-child{
+  display:block;
+  position:absolute;
+  left:10px;
+  color:white;
+  font-size:0.8em;
+  margin-top:-0.8em;
+   }
+
+
+  #scroll-contenedor > h4:first-child:first-letter{
+  font-size:1.8em;
+}
+
+ #scroll-contenedor h4{
+ text-shadow:1px 1px 2px black;
+display:block;
+position:absolute;
+left:5px;
+color:white;
+}
+ /*** FIN SCROLL HORIZONTAL ***/
+
+
+/*** GALERIA IMAGENES ***/
+#watch{
+ height:265px;
+ background:url('../img/gabonak2018/fondo_navidad.png')top right;
+ 
+}
+
+#watch li img {
+     width:auto;
+     height:265px;
+     margin:0;    
+} 
+
+h1#zorionak{
+text-shadow:-9px -25px 2px white;
+position:relative;
+bottom:0em;
+color:black !important;
+text-align:left;
+z-index:1;
+}
+
+
+img.navidad{
+margin:0.8em 0 -3.5em;
+height:180px;
+width:100%;
+border-bottom:8px solid red;
+}
+/*** FIN GALERIA ***/
+
+/*** PAGO TARJETA (pop-up)***/
+#boton-cerrar{
+    font-family:Arial;
+    position: absolute;
+    top: -0.7em;
+    right:0em;
+    font-size:1.9em;
+    display: block;
+    padding: 0.5em 0;
+    margin-bottom: 0.5em;
+    text-align: center;
+    vertical-align: top;
+}
+
+div#credito{
+  border:1px dotted;
+  opacity:0;
+  margin:0 1.8em;
+  top:0;
+  position:fixed;
+  padding:1em 0;
+  background-color:#fff4e6;
+  transition:all 3s ease;
+  -moz-transition:all 3s ease;
+  -webkit-transition:all 3s ease;
+  -o-transition:all 3s ease;
+  }
+  
+  div#credito img{
+    width:100px;
+    height:60px;
+    margin:0;
+    vertical-align:middle;
+    }
+/*** FIN TARJETA (pop-up)***/  
+
+	
+header#izena1 .logo1{
+	border-radius:0;
+}
+
+
+
+/***    DISPLAY:NONE  ***/
+#izena1 text, aside,img.logo2,img.logo1, nav#menu, img#palante, img#patras{
+	display:none;
+}
+/***   FIN DISPLAY:NONE  **/
+
+
+#principal h4#h4_carta{
+	font-size:1.1em;
+}
+
+#principal h4#h4_carta:hover{
+	text-decoration:underline;
+}
+
+nav#carta_menu{
+	display:inline;
+	padding:1em;
+}
+
+nav#carta_menu a{
+	text-decoration:none;
+}
+
+h1#karta{
+  font-size:1.7em;
+  letter-spacing:0.1em;
+  padding:0.5em;
+}
+
+h1#karta:first-letter{
+ color:red;
+ font-size:1.4em;
+ }
+ 
+
+nav#carta_menu ul{
+ 	 	display:block;
+  	width:50%;
+	  margin:auto;
+	 	list-style:none;
+}
+
+nav#carta_menu ul a li{
+  width:100%;
+  text-align:center;
+ 	background-color:#fff0e6;
+	font-size:1.2em;
+	cursor:pointer;
+	padding:0.2em;
+	margin:0.2em 0;
+ height:40px;
+ border-top-right-radius:18px;
+border-bottom-left-radius:18px;
+}
+
+nav#carta_menu ul li.izq{
+   margin-left:-2em;
+}
+
+nav#carta_menu ul li.dch{
+   margin-right:-2em;
+}
+
+
+nav#carta_menu ul li:hover{
+	background-color:#ffb380;
+	}
+
+
+#izena1 img#mugikorra{
+	padding:0;
+	border-radius:0;
+	display:inline;
+}
+
+.id{
+	font-size:1.3em;
+	padding:0.4em;
+	border-radius:2em;
+	font-weight:bold;
+}
+
+.ido{
+	font-size:1.3em;
+	font-weight:bold;
+ color:red;
+}
+
+#principal h5{
+	padding-bottom:2em;
+	color:#e60000 !important;
+	text-decoration:underline;
+}
+
+h4.titulares{
+	padding:0.8em 0;
+ color:#4d4d4d;
+}
+
+
+header#izena1{
+	border-bottom:1px dotted #e60000;
+	text-align:center;
+	font-size:0.8em;
+	width:100%;
+	background-color:#000000 ;
+	position:fixed;
+	padding:0.4em;
+ z-index:999;
+}
+
+header#izena1 h1{
+	color:#e60000 !important;
+}
+
+#izena1 h1.titulo_carta{
+	margin-top:0em;
+	font-size:2em;
+}
+
+header#izena1 h1,h5{
+	padding-bottom:0;
+}
+
+#izena1 h5.menu_txiki{
+	color:#e60000 !important;
+	float:left; 
+	font-style:italic;
+	text-decoration:none;
+	padding:0;
+	margin-left:-4.2em;
+}
+
+#izena1 img{
+	float:left;
+	width:50px;
+	height:56px;
+	margin-top:0.4em;
+}
+
+#principal img#portada{
+	margin:0;
+	width:100%;
+	padding:0;
+}
+
+
+img.imagenCentro{
+	margin:0.8em 0;
+	width:100%;
+	height:100%;
+	
+}
+
+img#ubica{
+	width:100%;
+ margin:0;
+ padding:0;
+}
+
+iframe{
+	width:100%;
+}
+
+img.imgpeque{
+	margin:0.5em 0;
+	width:auto;
+}
+
+
+
+
+/****  DIV PRiNCiPAL  ****/
+
+  div#principal{
+	    width:100%;
+    	padding-top:5.5em;
+  }
+
+div#prin_karta{
+  background:url('../img/zuha.jpg')top center;
+  width:100%;
+ 	padding-top:5em;
+}
+
+   #principal h3.titulares{
+    	font-size:1.8em;
+    	background-color:#d9d9d9;
+   }
+
+#izena1 *{
+	color:#e60000 !important;
+}
+
+#izena1 h5#carta{
+	font-weight:bold;
+	font-size:1.2em;
+	display:inline;
+	position:relative;
+	top:60px;
+	left:-2px;
+}
+
+
+#izena1 h1:first-letter, span#t{
+	font-size:1.5em;
+}
+
+h1.titulo_carta{
+	margin-top:-0.4em;
+	color:#e60000 !important;
+}
+
+
+
+.txiki{
+	font-style:italic;
+	color:#e60000 !important;	
+}
+
+
+
+     /****  MENu MOViLES  ****/
+
+nav#menu_moviles{
+display:inline;
+
+		}
+		
+		img#abrir{
+ margin-top:1em;
+		border:none;
+		float:left;
+ cursor:pointer;
+		width:4em;
+		height:4em;
+		}
+	
+ul#menu{
+	padding:0 0 0.3em 0.3em;
+}
+
+nav ul#menu li{
+ font-size:0.9em;
+		float:left;
+		list-style:none;
+ cursor:pointer;
+		background:url("../img/menu_opt.png")center no-repeat;
+		width:5em;
+		height:5em;
+	}
+	
+	
+	nav #menu li ul{		
+		display:none;	
+	}
+
+	#menu:hover li ul {
+	background-color:#fff0e6;
+	height:auto;
+	margin-left:5.5em;
+	}
+	
+	#menu a{
+		text-decoration:none;
+	}
+	
+	nav #menu:hover li ul li{
+		border:1.4px solid #ff8c00;
+		display:block;
+		background-color:#A9A9A9;
+		color:#993d00 !important;
+		height:2em;
+	}
+	
+
+nav#menu_moviles ul#menu li ul a li{
+	text-align:center;
+	font-size:1.3em;
+	padding:1em 0 0;
+	margin:0;
+}
+
+nav#menu_moviles ul#menu li ul a li:hover{
+			opacity:0.8;
+	background-color:#ffb380;
+    -webkit-transition-duration: 2s, 2s;
+	transition-duration: 2s, 2s;
+}
+
+nav#menu_moviles ul#menu li ul a li.actual{
+	background-color:#ffb380;
+}
+
+	nav#menu_moviles ul#menu li:hover ul{
+		   display:block;
+		   position:absolute;
+	}
+	
+	nav#menu_moviles ul#menu li:hover li{
+		width:10em;
+		float:none;
+		background:none;
+		text-align:center;
+	}
+	/* FIN del MENÚ NAVEGABLE-DESPLEGABLE */
+	
+
+
+	/* CELIACOS e IVA */
+	#bez{
+ display:block;
+ width:35%;
+	margin:auto;
+ border:1px solid;	
+ background-color:#ffe0cc;
+}  
+
+#principal h3#celiaco{
+ margin:1em 0;
+padding:0.6em;
+background-color:#ffe0cc;
+font-size:1em;
+}
+/*  FIN CELIACOS e IVA  */
+
+
+
+.boton{
+	padding:0.3em;
+	border:none;
+	text-align:center;
+	border-radius:0.5em;
+	height:2.5em;
+	width:5.5em;
+	cursor:pointer;
+	margin:1em;
+	
+}
+
+.boton:hover{
+	background-color:#ffb380;
+}
+
+.sub{
+	display:none;
+}
+
+
+ /****  PAGINA twt_opinion ****/
+
+table#opinionformu{
+padding:0;
+	width:100%;
+	background-color:none;
+	margin:0;
+}
+
+img#cuadro{
+ margin:0;
+	float:none;
+	padding:0;
+	width:100%; 
+	height:200px;
+	margin-top:-1.7em;
+}
+
+#tab1, #tab2, #tab3{
+font-size:1.2em;
+width:100%;
+margin:auto;
+}
+
+ table#opinionformu th,tr,td,input,textarea{
+	 background-color:none;
+ }
+ 
+ table#opitable{
+	 margin:0;
+	 padding:0;
+	 width:100%;
+  font-size:1.1em;
+  border:none;
+  border-spacing:0px 0px;
+  background-color:#ff8c00;
+ }
+  
+  table#opitable tr td{
+	    padding:0 auto;
+	    margin:0 0 1em 0;
+    border:none;
+  }
+  
+  th#opi1{
+     font-size:0.9em;
+	    margin:0;
+	    text-align:left;
+	    padding:0.4em;
+    border:none;
+    background-color:#e7b1b1;
+    color:white;
+}
+
+img#person{
+	padding-right:0.5em;
+	width:20px;
+	height:20px;
+	border-radius:30em;
+	vertical-align:middle;
+}
+
+table#opinionformu input[type="radio"] { 
+display: none; 
+} 
+
+label { 
+color: grey;
+margin:0 0.3em;
+ } 
+
+.clasificacion { 
+direction: rtl; 
+unicode-bidi: bidi-override; 
+}
+
+ label:hover, label:hover ~ label { 
+color: orange;
+ } 
+
+table#opinionformu input[type="radio"]:checked ~ label { 
+color: orange;
+ }
+
+   /****  FIN twt_opinion ****/
+
+
+     /****  HORARiO  ****/
+
+  div#horario{
+	    border-radius:0;
+    	width:100%;
+	    margin:0;
+    	margin-top:4em;
+    	margin-bottom:2em;
+     }
+
+   div#horario *{
+    color:#4d4d4d;
+}
+
+    /****  FIN HORARiO  ****/
+
+
+#principal h2#donde{
+		 	padding-bottom:3em;
+}
+
+#principal h2#donde span{
+	 font-size:0.7em;	
+}
+
+
+form{
+margin:0;
+padding:0;
+}
+
+input{
+position:static;
+}
+
+input.titulares < a{
+  color:#4d4d4d;
+}
+
+input.titulares{
+  border-top-left-radius:18px;
+  border-bottom-right-radius:18px;
+  border:1.2px dotted #4d4d4d;
+  background-color:#ffe0cc;
+}
+
+h2.titulares{
+ margin-bottom:0;
+}
+
+h3.titulares{
+  color:#4d4d4d;
+  text-decoration:underline;
+}
+
+/****   IMAGENES  ****/
+
+/**  imagen MUGiCOR  **/
+img#mugikor{
+  border-radius:80px;
+  width:55px;
+  height:55px;
+  right:2px;
+  padding-right:-5em;
+  position:fixed;
+  display:none;
+  bottom:218px;
+  -webkit-transition:all 3s ease;
+-o-transition:all 3s ease;
+-moz-transition:all 3s ease;
+-ms-transition:all 3s ease; transition:all 3s ease;
+}
+
+img#carro{
+  border-radius:80px;
+  width:55px;
+  height:55px;
+  right:2px;
+  padding-right:-5em;
+  position:fixed;
+  bottom:155px;
+  background-color:white;
+  -webkit-transition:all 3s ease;
+-o-transition:all 3s ease;
+-moz-transition:all 3s ease;
+-ms-transition:all 3s ease; transition:all 3s ease;
+}
+
+/**  imagen HORARiO  **/
+img#calen{
+  width:50px;
+  height:50px;
+  vertical-align:middle;
+  float:left;
+  padding-top:1em;
+  position:absolute;
+  left:0.8em;
+  -webkit-transform: rotate(-15deg); 	
+  -moz-transform: rotate(-15deg); 	rotation: -15deg;
+}
+/**  FIN imagen HORARiO  **/
+
+
+/**  PIE **/
+ 
+ footer a img#fbook{
+   width:30px;
+   height:30px;
+   border-radius:10px;
+   vertical-align:bottom;
+  }
+
+  footer ul li#fbmovil{
+    display:inline;
+  }
+	
+   footer img{
+	    	width:50%;
+   	}
+
+	  footer ul{
+	   	padding:1em;
+	   	list-style-type: none;
+	   	text-align: center;
+   	}
+	
+	footer ul li{
+		margin:0 0.4em;
+		color:#e60000 !important;
+		display: inline;
+	}
+
+footer #igo{
+    font-family:"Courier-new";
+    background-color:white;
+    width:40px;
+    height:40px;
+    margin-right:0em;
+    text-align:center; 
+	opacity:0.7;
+     -webkit-transition-duration: 3s, 3s;
+	transition-duration: 3s, 3s;
+	outline: 0;
+	bottom:12px;
+ right:0;
+ display:none;
+  font-size:4em;
+  color:red;
+}
+/**  FIN PIE  **/
+  
+
+}/**  FIN de ESTiLOS MOViLES **/
+
